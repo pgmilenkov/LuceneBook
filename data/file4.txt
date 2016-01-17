@@ -1,0 +1,4 @@
+In the spirit of Manning’s in Action books, we showed you two real, standalone
+applications, Indexer and Searcher, which are capable of indexing and searching text
+files stored in a file system. We then briefly described each of the Lucene classes used
+in these two applications.

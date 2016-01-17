@@ -1,0 +1,3 @@
+Search is everywhere, and chances are that if you’re reading this book, you’re interested
+in search becoming an integral part of your applications. Depending on your needs,
+integrating Lucene may be trivial, or it may involve challenging architectural considerations.

@@ -1,0 +1,10 @@
+In the spirit of Manning’s in Action books, we showed you two real, standalone
+applications, Indexer and Searcher, which are capable of indexing and searching text
+files stored in a file system. We then briefly described each of the Lucene classes used
+in these two applications.
+ Search is everywhere, and chances are that if you’re reading this book, you’re interested
+in search becoming an integral part of your applications. Depending on your needs,
+integrating Lucene may be trivial, or it may involve challenging architectural considerations.
+ We’ve organized the next couple of chapters as we did this chapter. The first thing
+we need to do is index some documents; we discuss this process next in detail in
+chapter 2.

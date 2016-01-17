@@ -23,11 +23,8 @@ public class Indexer {
 	}
 
 	public static void main(String[] args) throws Exception {
-		 if (args.length != 2) {
-			 throw new IllegalArgumentException("Usage: java " + Indexer.class.getName() + " <index dir> <data dir>");
-		 }
-		 String indexDir = args[0];
-		 String dataDir = args[1];
+		 String indexDir = "index";
+		 String dataDir = "data";
 		 long start = System.currentTimeMillis();
 		 Indexer indexer = new Indexer(indexDir);
 		 int numIndexed;
@@ -46,9 +43,12 @@ public class Indexer {
 
 	public int index(String dataDir, FileFilter filter) throws Exception {
 		 File[] files = new File(dataDir).listFiles();
-		 for (File f: files)
-			 if (!f.isDirectory() && !f.isHidden() && f.exists() && f.canRead() && (filter == null || filter.accept(f)))
+		 for (File f: files) {
+			 System.out.println(f.toString());
+			 if (!f.isDirectory() && !f.isHidden() && f.exists() && f.canRead() && (filter == null || filter.accept(f))) {
 				 indexFile(f);
+			 }
+		 }
 		 return writer.numDocs();
 	 }
 	

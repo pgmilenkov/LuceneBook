@@ -17,11 +17,8 @@ import org.apache.lucene.store.FSDirectory;
 
 public class Searcher {
 	public static void main(String[] args) throws IllegalArgumentException, IOException, ParseException {
-		 if (args.length != 2) {
-			 throw new IllegalArgumentException("Usage: java " + Searcher.class.getName() + " <index dir> <query>");
-		 }
-		 String indexDir = args[0];
-		 String q = args[1];
+		 String indexDir = "index";
+		 String q = "Lucene";
 		 search(indexDir, q);
 	 }
 	
